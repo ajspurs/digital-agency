@@ -1,0 +1,109 @@
+nav {
+    color: white;
+    padding: 20px 0;
+    margin-left: 0px;
+    display: flex;
+    padding-right: 20px;
+    justify-content: right;
+    position: relative;
+    @media (max-width: 767px) {
+        padding: 0;
+    }
+    ul {
+        display: flex;
+        align-items: center;
+        margin-right: 0;
+        text-align: left;
+        transition: ease .8s opacity;
+        @media(max-width: 767px) {
+            display: flex;
+            flex-direction: column;
+            opacity: 0;
+            margin-left: 0;
+            max-height: 0px;
+            overflow: hidden;
+            visibility: none;
+            width: 0px;
+            &.active {
+                opacity: 1;
+                max-height: 500px;
+                width: auto;
+                overflow: visible;
+                display: flex;
+                flex-direction: column;
+                background-color: rgba(0, 0, 0, 0.959);
+                position: absolute;
+                padding-left: 15px;
+                left: 0;
+                top: 100%;
+                width: 100%;
+                li {
+                    display: block;
+                    padding: 10px 0;
+                }                
+            }
+        }
+        li {
+            list-style: none;
+            margin: 0 10px;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 10px 0;
+            cursor: pointer;
+            width: 100%;
+            &::after {
+                transition: all ease-in-out .3s;
+                background: none repeat scroll 0 0 aqua;
+                content: "";
+                display: block;
+                height: 2px;
+                width: 0; 
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
+        }
+    }
+
+    .mobile-bar {
+        margin-left: 0px;
+        padding: 0.5em 0em;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: none;
+        cursor: pointer;
+        @media(max-width: 767px) {
+            display: flex;  
+            margin-left: -25px;
+        }
+        &.active {
+            padding-left: 40px;
+        }
+        
+        span {
+            display: block;
+            height: 2px;
+            margin: 2px;
+            width: 30px;
+            background: aqua;
+        }
+        &:hover {
+            
+            span {
+                background: rgb(0, 108, 112);
+            }
+        }
+    }
+}
+
+.contact-li {
+    padding: 15px 20px;
+    border: 1px solid aqua;
+    @media (max-width: 767px) {
+        border: none;
+        padding: unset;
+    }
+}

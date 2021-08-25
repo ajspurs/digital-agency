@@ -1,0 +1,21 @@
+.section-works,
+.testimonial {
+    background-color: rgb(20, 20, 20);
+    padding-top: 60px;
+}
+
+.gallery {
+    margin-top: 50px;
+    padding-bottom: 150px;
+}
+
+.gallery-img {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+} 
+
+.title-button-flex {
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,15 @@
+.services {
+    background-color: rgb(11, 11, 15);
+    padding: 60px 0 150px 0
+}
+
+.services-box {
+    background-color: rgb(20, 20, 20);
+    padding: 20px 20px 40px 20px;
+    border-bottom: 3px solid white;
+    cursor: pointer;
+    transition: 0.7s;
+    &:hover {
+        background-color: aqua;
+    }
+}

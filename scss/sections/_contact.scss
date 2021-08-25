@@ -1,0 +1,22 @@
+.contact {
+    background-color: rgb(11, 11, 15);
+    padding: 30px 0 80px 0;
+    border-bottom: 1px solid grey;
+}
+
+.contact-span {
+    color: white;
+    margin-left: 10px;
+    font-family: 'Montserrat';
+}
+
+.contact-line {
+    margin-bottom: 20px;
+    font-family: 'Montserrat';
+}
+
+.contact-block {
+    @media (max-width: 1024px) {
+        margin-left: 20px;
+    }
+}

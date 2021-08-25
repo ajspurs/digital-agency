@@ -1,0 +1,50 @@
+.desktop-none {
+    @media (min-width: 769px) {
+        display: none !important;
+    }
+    }
+    
+    .mobile-none {
+        @media (max-width: 767px) {
+            display: none !important;
+        }
+    }
+
+    .flex-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    
+    .align-center {
+        text-align: center;
+    }
+
+    .height-100 {
+        height: 100%;
+    }
+
+    .height-50 {
+        height: 50%;
+    }
+
+
+    //Two following styles that make the horizontal blue line in each section
+    
+    .line-align {
+        display: flex;
+        margin-top: -32px;
+    }
+    
+    .hori {
+        border-left: 2px solid aqua;
+        height: 25px;
+        margin: 0 auto; 
+        text-align: center;
+    }
+
+    .inline-block {
+        display: inline-block !important;
+    }
+    

@@ -1,0 +1,88 @@
+.grid-1 {
+    display: grid;
+    margin: 100px auto 10px auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 70px;
+    @media (max-width: 767px) {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 80px;
+    gap: 15px;
+}
+
+.gallery-grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: 1fr;  
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.about-picture-grid {
+    display: grid;
+    margin-top: 60px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    width: 100%;
+    @media (max-width: 767px) {
+        grid-template-rows: unset;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+.about-paragraphs-grid {
+    display: grid;
+    margin-top: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.latest-news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 15px;
+    @media (max-width: 767px) {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    @media (max-width: 1024px) {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: unset;
+    }
+}
+
+
+// About Section Image Grid
+
+.a {
+    grid-column: 1 ;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    position: relative;
+}
+
+.b {
+    grid-row-start: -3;
+    grid-row-end: -2;
+    position: relative;
+}
+
+.c {
+    grid-row-start: -2;
+    grid-row-end: -1;
+    position: relative;
+}

@@ -1,0 +1,33 @@
+footer {
+    background-color: rgb(11, 11, 15);
+    padding: 35px 0;
+}
+
+.footer-line-one {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-line-two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-text {
+    margin: 0px 50px 0px 0px;
+}
+
+.about-text {
+    padding-right: 15px;
+    margin-bottom: 10px;
+}
+
+.footer-text,
+.about-text {
+    @media (max-width: 767px) {
+        margin-bottom: 10px;
+    }
+}
